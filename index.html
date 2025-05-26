@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Baixar Vídeo do Instagram</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JULIANA GOMES(Curica)</h1>
+        <h2>Baixar Vídeo do Instagram</h2>
+        
+        <form id="downloadForm">
+            <label for="instaUrl">Cole o link do vídeo do Instagram:</label>
+            <input type="url" id="instaUrl" name="instaUrl" placeholder="https://www.instagram.com/p/..." required>
+            <button type="submit" id="downloadBtn">Baixar Vídeo</button>
+        </form>
+        <div class="loader" id="loader" style="display:none;">Carregando...</div>
+        <div class="error" id="errorMsg"></div>
+        <a id="downloadLink" class="download-link" style="display:none;" target="_blank">Clique aqui para baixar</a>
+    </div>
+    <script src="src/script.js"></script>
+</body>
+</html>
